@@ -1,0 +1,8 @@
+<ul>
+  <% @details.each do |detail| %>
+    <li>
+      <%= detail.description %>
+    </li>
+  <% end %>
+</ul>
+<%= render 'api/v1/details/form', detail: Detail.new %>

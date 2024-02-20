@@ -1,0 +1,7 @@
+<ul>
+  <% @people.each do |person| %>
+    <li>
+      <%= link_to person.name, api_v1_person_path(person), remote: true, 'data-turbo-frame': 'people_list' %>
+    </li>
+  <% end %>
+</ul>
