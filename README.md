@@ -8,12 +8,18 @@
 
 (1) Clone this repository to your local machine:
         `git clone git@github.com:alkeshrails tech_test.git`
-(2) Change into the project directory: `cd tech_test
-(3) Install gem dependencies:
+        
+=> Change into the project directory: `cd tech_test
+
+=> Install gem dependencies:
         'bundle install'
-(4) Follow these steps to setup the database :
+        
+=> Follow these steps to setup the database :
+
     * rails db:create (Create new database).
+    
     * rails db:migrate (To run migrations).
+    
     * rails db:seed (Seed the database with sample data)
 
  ## Running the Test Cases
