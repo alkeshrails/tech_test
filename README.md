@@ -1,24 +1,21 @@
-# README
+=> Welcome to the tech_test repository. This guide will help you set up and run the project locally.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+=> Make sure you have the following installed on your system.
+- Ruby version 3.0.0
+- Rails version: 7.0.8
 
-Things you may want to cover:
+## Getting Started
 
-* Ruby version
+(1) Clone this repository to your local machine:
+        `git clone git@github.com:alkeshrails tech_test.git`
+(2) Change into the project directory: `cd tech_test
+(3) Install gem dependencies:
+        'bundle install'
+(4) Follow these steps to setup the database :
+    * rails db:create (Create new database).
+    * rails db:migrate (To run migrations).
+    * rails db:seed (Seed the database with sample data)
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+ ## Running the Test Cases
+  => To ensure the functionality of the application, you can run the test suite using the following command:
+      Run 'bundle exec rspec'
