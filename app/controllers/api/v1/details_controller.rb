@@ -12,7 +12,7 @@ module Api
       def create
         @detail = Detail.new(detail_params)
         if @detail.save
-          render turbo_stream: turbo_stream.append('details_list', partial: 'details_list')
+          render turbo_stream: turbo_stream.append('details_list', partial: 'details_list'), status: :created
         else
           render json: @detail.errors, status: :unprocessable_entity
         end

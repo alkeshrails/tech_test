@@ -12,7 +12,7 @@ module Api
       def create
         @person = Person.new(person_params)
         if @person.save
-          render turbo_stream: turbo_stream.append('people_list', partial: 'people_list')
+          render turbo_stream: turbo_stream.append('people_list', partial: 'people_list'),status: :created
         else
           render json: @person.errors, status: :unprocessable_entity
         end
